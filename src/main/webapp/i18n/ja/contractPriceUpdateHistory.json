@@ -1,0 +1,27 @@
+{
+  "seswebApp": {
+    "contractPriceUpdateHistory": {
+      "home": {
+        "title": "ContractPriceUpdateHistories",
+        "refreshListLabel": "一覧更新",
+        "createLabel": "Contract Price Update History を追加",
+        "createOrEditLabel": "Contract Price Update Historyを追加または編集",
+        "notFound": "No Contract Price Update Histories found"
+      },
+      "created": "A new Contract Price Update History is created with identifier {{ param }}",
+      "updated": "A Contract Price Update History is updated with identifier {{ param }}",
+      "deleted": "A Contract Price Update History is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Contract Price Update History {{ id }}を削除してもよろしいですか？"
+      },
+      "detail": {
+        "title": "Contract Price Update History"
+      },
+      "id": "ID",
+      "updateDate": "Update Date",
+      "beforePrice": "Before Price",
+      "afterPrice": "After Price",
+      "contract": "Contract"
+    }
+  }
+}

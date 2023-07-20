@@ -1,0 +1,129 @@
+{
+  "applications": "*",
+  "changelogDate": "20230714124517",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "contracts",
+  "fields": [
+    {
+      "fieldName": "lastName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"],
+      "javadoc": "苗字"
+    },
+    {
+      "fieldName": "firstName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"],
+      "javadoc": "名前"
+    },
+    {
+      "fieldName": "ecnId",
+      "fieldType": "String",
+      "javadoc": "ID"
+    },
+    {
+      "fieldName": "manager",
+      "fieldType": "String",
+      "javadoc": "担当者"
+    },
+    {
+      "fieldName": "managerEcnId",
+      "fieldType": "String",
+      "javadoc": "担当者"
+    },
+    {
+      "fieldName": "contractStartDate",
+      "fieldType": "Instant",
+      "javadoc": "契約開始日付"
+    },
+    {
+      "fieldName": "contractEndDate",
+      "fieldType": "Instant",
+      "javadoc": "契約終了日付"
+    },
+    {
+      "fieldName": "orderUnitPrice",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"],
+      "javadoc": "受注単金"
+    },
+    {
+      "fieldName": "maximumOrderSettlementCondition",
+      "fieldType": "Integer",
+      "javadoc": "受注精算条件上限"
+    },
+    {
+      "fieldName": "minimumOrderSettlementCondition",
+      "fieldType": "Integer",
+      "javadoc": "受注精算条件下限"
+    },
+    {
+      "fieldName": "orderDeductionUnitPrice",
+      "fieldType": "Integer",
+      "javadoc": "受注控除単価"
+    },
+    {
+      "fieldName": "orderSurchargeUnitPrice",
+      "fieldType": "Integer",
+      "javadoc": "受注超過単価"
+    },
+    {
+      "fieldName": "purchaseUnitPrice",
+      "fieldType": "Integer",
+      "javadoc": "仕入れ単金"
+    },
+    {
+      "fieldName": "maximumPurchaseSettlementCondition",
+      "fieldType": "Integer",
+      "javadoc": "仕入れ精算条件上限"
+    },
+    {
+      "fieldName": "minimumPurchaseSettlementCondition",
+      "fieldType": "Integer",
+      "javadoc": "仕入れ精算条件下限"
+    },
+    {
+      "fieldName": "purchaseDeductionUnitPrice",
+      "fieldType": "Integer",
+      "javadoc": "仕入れ控除単価"
+    },
+    {
+      "fieldName": "purchaseSurchargeUnitPrice",
+      "fieldType": "Integer",
+      "javadoc": "仕入れ超過単価"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Contracts",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "salesAmount",
+      "otherEntityRelationshipName": "contract",
+      "relationshipName": "salesAmount",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "contractPriceUpdateHistory",
+      "otherEntityRelationshipName": "contract",
+      "relationshipName": "priceUpdateHistory",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "projects",
+      "otherEntityRelationshipName": "contracts",
+      "relationshipName": "project",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "partnerManager",
+      "otherEntityRelationshipName": "contracts",
+      "relationshipName": "partnerManager",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

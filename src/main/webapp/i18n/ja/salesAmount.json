@@ -1,0 +1,27 @@
+{
+  "seswebApp": {
+    "salesAmount": {
+      "home": {
+        "title": "SalesAmounts",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Sales Amount を追加",
+        "createOrEditLabel": "Sales Amountを追加または編集",
+        "notFound": "No Sales Amounts found"
+      },
+      "created": "A new Sales Amount is created with identifier {{ param }}",
+      "updated": "A Sales Amount is updated with identifier {{ param }}",
+      "deleted": "A Sales Amount is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Sales Amount {{ id }}を削除してもよろしいですか？"
+      },
+      "detail": {
+        "title": "Sales Amount"
+      },
+      "id": "ID",
+      "salesYm": "Sales Ym",
+      "workTime": "Work Time",
+      "billingAmount": "Billing Amount",
+      "contract": "Contract"
+    }
+  }
+}

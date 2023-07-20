@@ -1,0 +1,26 @@
+{
+  "seswebApp": {
+    "projects": {
+      "home": {
+        "title": "Projects",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Projects を追加",
+        "createOrEditLabel": "Projectsを追加または編集",
+        "notFound": "No Projects found"
+      },
+      "created": "A new Projects is created with identifier {{ param }}",
+      "updated": "A Projects is updated with identifier {{ param }}",
+      "deleted": "A Projects is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Projects {{ id }}を削除してもよろしいですか？"
+      },
+      "detail": {
+        "title": "Projects"
+      },
+      "id": "ID",
+      "name": "Name",
+      "contracts": "Contracts",
+      "customerManager": "Customer Manager"
+    }
+  }
+}

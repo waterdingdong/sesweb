@@ -48,6 +48,17 @@ public class CacheConfiguration {
             createCache(cm, jp.ecn.sesweb.domain.User.class.getName());
             createCache(cm, jp.ecn.sesweb.domain.Authority.class.getName());
             createCache(cm, jp.ecn.sesweb.domain.User.class.getName() + ".authorities");
+            createCache(cm, jp.ecn.sesweb.domain.Contracts.class.getName());
+            createCache(cm, jp.ecn.sesweb.domain.Contracts.class.getName() + ".salesAmounts");
+            createCache(cm, jp.ecn.sesweb.domain.Contracts.class.getName() + ".priceUpdateHistories");
+            createCache(cm, jp.ecn.sesweb.domain.CustomerManager.class.getName());
+            createCache(cm, jp.ecn.sesweb.domain.CustomerManager.class.getName() + ".projects");
+            createCache(cm, jp.ecn.sesweb.domain.Projects.class.getName());
+            createCache(cm, jp.ecn.sesweb.domain.Projects.class.getName() + ".contracts");
+            createCache(cm, jp.ecn.sesweb.domain.SalesAmount.class.getName());
+            createCache(cm, jp.ecn.sesweb.domain.PartnerManager.class.getName());
+            createCache(cm, jp.ecn.sesweb.domain.PartnerManager.class.getName() + ".contracts");
+            createCache(cm, jp.ecn.sesweb.domain.ContractPriceUpdateHistory.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

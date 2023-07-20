@@ -1,0 +1,63 @@
+{
+  "seswebApp": {
+    "contracts": {
+      "home": {
+        "title": "Contracts",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Contracts を追加",
+        "createOrEditLabel": "Contractsを追加または編集",
+        "notFound": "No Contracts found"
+      },
+      "created": "A new Contracts is created with identifier {{ param }}",
+      "updated": "A Contracts is updated with identifier {{ param }}",
+      "deleted": "A Contracts is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Contracts {{ id }}を削除してもよろしいですか？"
+      },
+      "detail": {
+        "title": "Contracts"
+      },
+      "id": "ID",
+      "lastName": "Last Name",
+      "firstName": "First Name",
+      "ecnId": "Ecn Id",
+      "manager": "Manager",
+      "managerEcnId": "Manager Ecn Id",
+      "contractStartDate": "Contract Start Date",
+      "contractEndDate": "Contract End Date",
+      "orderUnitPrice": "Order Unit Price",
+      "maximumOrderSettlementCondition": "Maximum Order Settlement Condition",
+      "minimumOrderSettlementCondition": "Minimum Order Settlement Condition",
+      "orderDeductionUnitPrice": "Order Deduction Unit Price",
+      "orderSurchargeUnitPrice": "Order Surcharge Unit Price",
+      "purchaseUnitPrice": "Purchase Unit Price",
+      "maximumPurchaseSettlementCondition": "Maximum Purchase Settlement Condition",
+      "minimumPurchaseSettlementCondition": "Minimum Purchase Settlement Condition",
+      "purchaseDeductionUnitPrice": "Purchase Deduction Unit Price",
+      "purchaseSurchargeUnitPrice": "Purchase Surcharge Unit Price",
+      "salesAmount": "Sales Amount",
+      "priceUpdateHistory": "Price Update History",
+      "project": "Project",
+      "partnerManager": "Partner Manager",
+      "help": {
+        "lastName": "苗字",
+        "firstName": "名前",
+        "ecnId": "ID",
+        "manager": "担当者",
+        "managerEcnId": "担当者",
+        "contractStartDate": "契約開始日付",
+        "contractEndDate": "契約終了日付",
+        "orderUnitPrice": "受注単金",
+        "maximumOrderSettlementCondition": "受注精算条件上限",
+        "minimumOrderSettlementCondition": "受注精算条件下限",
+        "orderDeductionUnitPrice": "受注控除単価",
+        "orderSurchargeUnitPrice": "受注超過単価",
+        "purchaseUnitPrice": "仕入れ単金",
+        "maximumPurchaseSettlementCondition": "仕入れ精算条件上限",
+        "minimumPurchaseSettlementCondition": "仕入れ精算条件下限",
+        "purchaseDeductionUnitPrice": "仕入れ控除単価",
+        "purchaseSurchargeUnitPrice": "仕入れ超過単価"
+      }
+    }
+  }
+}

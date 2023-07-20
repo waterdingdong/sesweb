@@ -1,0 +1,35 @@
+{
+  "applications": "*",
+  "changelogDate": "20230714124520",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "sales_amount",
+  "fields": [
+    {
+      "fieldName": "salesYm",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "workTime",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "billingAmount",
+      "fieldType": "Integer"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "SalesAmount",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "contracts",
+      "otherEntityRelationshipName": "salesAmount",
+      "relationshipName": "contract",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

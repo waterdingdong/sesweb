@@ -1,0 +1,33 @@
+{
+  "applications": "*",
+  "changelogDate": "20230714124519",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "projects",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Projects",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "contracts",
+      "otherEntityRelationshipName": "project",
+      "relationshipName": "contracts",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "customerManager",
+      "otherEntityRelationshipName": "projects",
+      "relationshipName": "customerManager",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

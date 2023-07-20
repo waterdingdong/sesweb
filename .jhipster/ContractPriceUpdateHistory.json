@@ -1,0 +1,35 @@
+{
+  "applications": "*",
+  "changelogDate": "20230714124522",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "contract_price_update_history",
+  "fields": [
+    {
+      "fieldName": "updateDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "beforePrice",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "afterPrice",
+      "fieldType": "Integer"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "ContractPriceUpdateHistory",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "contracts",
+      "otherEntityRelationshipName": "priceUpdateHistory",
+      "relationshipName": "contract",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

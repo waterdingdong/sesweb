@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <!--
+        Added the entity Contracts.
+    -->
+    <changeSet id="20230714124517-1" author="jhipster">
+        <createTable tableName="contracts">
+            <column name="id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="last_name" type="varchar(255)" remarks="苗字">
+                <constraints nullable="false" />
+            </column>
+            <column name="first_name" type="varchar(255)" remarks="名前">
+                <constraints nullable="false" />
+            </column>
+            <column name="ecn_id" type="varchar(255)" remarks="ID">
+                <constraints nullable="true" />
+            </column>
+            <column name="manager" type="varchar(255)" remarks="担当者">
+                <constraints nullable="true" />
+            </column>
+            <column name="manager_ecn_id" type="varchar(255)" remarks="担当者">
+                <constraints nullable="true" />
+            </column>
+            <column name="contract_start_date" type="${datetimeType}" remarks="契約開始日付">
+                <constraints nullable="true" />
+            </column>
+            <column name="contract_end_date" type="${datetimeType}" remarks="契約終了日付">
+                <constraints nullable="true" />
+            </column>
+            <column name="order_unit_price" type="integer" remarks="受注単金">
+                <constraints nullable="false" />
+            </column>
+            <column name="maximum_order_settlement_condition" type="integer" remarks="受注精算条件上限">
+                <constraints nullable="true" />
+            </column>
+            <column name="minimum_order_settlement_condition" type="integer" remarks="受注精算条件下限">
+                <constraints nullable="true" />
+            </column>
+            <column name="order_deduction_unit_price" type="integer" remarks="受注控除単価">
+                <constraints nullable="true" />
+            </column>
+            <column name="order_surcharge_unit_price" type="integer" remarks="受注超過単価">
+                <constraints nullable="true" />
+            </column>
+            <column name="purchase_unit_price" type="integer" remarks="仕入れ単金">
+                <constraints nullable="true" />
+            </column>
+            <column name="maximum_purchase_settlement_condition" type="integer" remarks="仕入れ精算条件上限">
+                <constraints nullable="true" />
+            </column>
+            <column name="minimum_purchase_settlement_condition" type="integer" remarks="仕入れ精算条件下限">
+                <constraints nullable="true" />
+            </column>
+            <column name="purchase_deduction_unit_price" type="integer" remarks="仕入れ控除単価">
+                <constraints nullable="true" />
+            </column>
+            <column name="purchase_surcharge_unit_price" type="integer" remarks="仕入れ超過単価">
+                <constraints nullable="true" />
+            </column>
+            <column name="project_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="partner_manager_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here -->
+        </createTable>
+        <dropDefaultValue tableName="contracts" columnName="contract_start_date" columnDataType="${datetimeType}"/>
+        <dropDefaultValue tableName="contracts" columnName="contract_end_date" columnDataType="${datetimeType}"/>
+    </changeSet>
+
+    <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here -->
+
+    <!--
+        Load sample data generated with Faker.js
+        - This data can be easily edited using a CSV editor (or even MS Excel) and
+          is located in the 'src/main/resources/config/liquibase/fake-data' directory
+        - By default this data is applied when running with the JHipster 'dev' profile.
+          This can be customized by adding or removing 'faker' in the 'spring.liquibase.contexts'
+          Spring Boot configuration key.
+    -->
+    <changeSet id="20230714124517-1-data" author="jhipster" context="faker">
+        <loadData
+                  file="config/liquibase/fake-data/contracts.csv"
+                  separator=";"
+                  tableName="contracts"
+                  usePreparedStatements="true">
+            <column name="id" type="numeric"/>
+            <column name="last_name" type="string"/>
+            <column name="first_name" type="string"/>
+            <column name="ecn_id" type="string"/>
+            <column name="manager" type="string"/>
+            <column name="manager_ecn_id" type="string"/>
+            <column name="contract_start_date" type="date"/>
+            <column name="contract_end_date" type="date"/>
+            <column name="order_unit_price" type="numeric"/>
+            <column name="maximum_order_settlement_condition" type="numeric"/>
+            <column name="minimum_order_settlement_condition" type="numeric"/>
+            <column name="order_deduction_unit_price" type="numeric"/>
+            <column name="order_surcharge_unit_price" type="numeric"/>
+            <column name="purchase_unit_price" type="numeric"/>
+            <column name="maximum_purchase_settlement_condition" type="numeric"/>
+            <column name="minimum_purchase_settlement_condition" type="numeric"/>
+            <column name="purchase_deduction_unit_price" type="numeric"/>
+            <column name="purchase_surcharge_unit_price" type="numeric"/>
+            <!-- jhipster-needle-liquibase-add-loadcolumn - JHipster (and/or extensions) can add load columns here -->
+        </loadData>
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,77 @@
+entity Contracts {
+  /** 苗字 */ 
+  lastName String required
+  /** 名前 */
+  firstName String required
+  /** ID */
+  ecnId String
+  /** 担当者 */
+  manager String
+  /** 担当者 */
+  managerEcnId String  
+  /** 契約開始日付 */ 
+  contractStartDate Instant
+  /** 契約終了日付 */ 
+  contractEndDate Instant
+  /** 受注単金 */
+  orderUnitPrice Integer required
+  /** 受注精算条件上限 */ 
+  maximumOrderSettlementCondition Integer
+  /** 受注精算条件下限 */ 
+  minimumOrderSettlementCondition Integer
+  /** 受注控除単価 */ 
+  orderDeductionUnitPrice Integer
+  /** 受注超過単価 */ 
+  orderSurchargeUnitPrice Integer
+  /** 仕入れ単金 */ 
+  purchaseUnitPrice Integer
+  /** 仕入れ精算条件上限 */ 
+  maximumPurchaseSettlementCondition Integer
+  /** 仕入れ精算条件下限 */ 
+  minimumPurchaseSettlementCondition Integer
+  /** 仕入れ控除単価 */ 
+  purchaseDeductionUnitPrice Integer
+  /** 仕入れ超過単価 */ 
+  purchaseSurchargeUnitPrice Integer    
+}
+
+entity CustomerManager {
+  /** 請求先 */
+  customerName String required
+  /** 顧客担当者 */
+  Name String required
+  email String
+  phoneName String
+}
+
+entity Projects {
+  name String
+}
+
+entity SalesAmount {
+  salesYm String
+  workTime Integer
+  billingAmount Integer
+}
+
+entity PartnerManager {
+  name String required
+  companyName String required
+  email String pattern(/^[^@\s]+@[^@\s]+\.[^@\s]+$/)
+  phoneNumber String
+  wechatId String
+}
+
+entity ContractPriceUpdateHistory {
+  updateDate Instant
+  beforePrice Integer
+  afterPrice Integer
+}
+
+relationship OneToMany {
+  CustomerManager{projects} to Projects{customerManager},
+  Projects{contracts} to Contracts{project},
+  PartnerManager{contracts} to Contracts{partnerManager},
+  Contracts{salesAmount} to SalesAmount{contract},
+  Contracts{priceUpdateHistory} to ContractPriceUpdateHistory{contract}
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity ContractPriceUpdateHistory.
+    -->
+    <changeSet id="20230714124522-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="contract_id"
+                                 baseTableName="contract_price_update_history"
+                                 constraintName="fk_contract_price_update_history__contract_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="contracts"/>
+    </changeSet>
+</databaseChangeLog>

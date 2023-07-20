@@ -47,7 +47,7 @@ public class LoginVM {
     public String toString() {
         return "LoginVM{" +
             "username='" + username + '\'' +
-            ", rememberMe=" + rememberMe +
+            ", rememberMe = " + rememberMe +
             '}';
     }
 }

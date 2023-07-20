@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-SeswebApp<sesweb>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "jp.ecn.sesweb.SeswebApp",
+            "projectName": "sesweb",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

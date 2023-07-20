@@ -1,0 +1,27 @@
+{
+  "seswebApp": {
+    "salesAmount": {
+      "home": {
+        "title": "Sales Amounts",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Sales Amount",
+        "createOrEditLabel": "Create or edit a Sales Amount",
+        "notFound": "No Sales Amounts found"
+      },
+      "created": "A new Sales Amount is created with identifier {{ param }}",
+      "updated": "A Sales Amount is updated with identifier {{ param }}",
+      "deleted": "A Sales Amount is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Sales Amount {{ id }}?"
+      },
+      "detail": {
+        "title": "Sales Amount"
+      },
+      "id": "ID",
+      "salesYm": "Sales Ym",
+      "workTime": "Work Time",
+      "billingAmount": "Billing Amount",
+      "contract": "Contract"
+    }
+  }
+}

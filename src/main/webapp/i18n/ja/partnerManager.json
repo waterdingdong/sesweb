@@ -1,0 +1,29 @@
+{
+  "seswebApp": {
+    "partnerManager": {
+      "home": {
+        "title": "PartnerManagers",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Partner Manager を追加",
+        "createOrEditLabel": "Partner Managerを追加または編集",
+        "notFound": "No Partner Managers found"
+      },
+      "created": "登録は成功しました。",
+      "updated": "更新は成功しました。",
+      "deleted": "削除は成功しました。",
+      "delete": {
+        "question": "Partner Manager {{ id }}を削除してもよろしいですか？"
+      },
+      "detail": {
+        "title": "Partner Manager"
+      },
+      "id": "ID",
+      "name": "名前",
+      "companyName": "会社名",
+      "email": "Email",
+      "phoneNumber": "電話番号",
+      "wechatId": "Wechat Id",
+      "contracts": "Contracts"
+    }
+  }
+}

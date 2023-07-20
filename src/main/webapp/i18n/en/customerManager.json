@@ -1,0 +1,32 @@
+{
+  "seswebApp": {
+    "customerManager": {
+      "home": {
+        "title": "Customer Managers",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Customer Manager",
+        "createOrEditLabel": "Create or edit a Customer Manager",
+        "notFound": "No Customer Managers found"
+      },
+      "created": "A new Customer Manager is created with identifier {{ param }}",
+      "updated": "A Customer Manager is updated with identifier {{ param }}",
+      "deleted": "A Customer Manager is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Customer Manager {{ id }}?"
+      },
+      "detail": {
+        "title": "Customer Manager"
+      },
+      "id": "ID",
+      "customerName": "Customer Name",
+      "name": "Name",
+      "email": "Email",
+      "phoneName": "Phone Name",
+      "projects": "Projects",
+      "help": {
+        "customerName": "請求先",
+        "name": "顧客担当者"
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "applications": "*",
+  "changelogDate": "20230714124518",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "customer_manager",
+  "fields": [
+    {
+      "fieldName": "customerName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"],
+      "javadoc": "請求先"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"],
+      "javadoc": "顧客担当者"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "phoneName",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "CustomerManager",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "projects",
+      "otherEntityRelationshipName": "customerManager",
+      "relationshipName": "projects",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}

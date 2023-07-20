@@ -1,0 +1,27 @@
+{
+  "seswebApp": {
+    "contractPriceUpdateHistory": {
+      "home": {
+        "title": "Contract Price Update Histories",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Contract Price Update History",
+        "createOrEditLabel": "Create or edit a Contract Price Update History",
+        "notFound": "No Contract Price Update Histories found"
+      },
+      "created": "A new Contract Price Update History is created with identifier {{ param }}",
+      "updated": "A Contract Price Update History is updated with identifier {{ param }}",
+      "deleted": "A Contract Price Update History is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Contract Price Update History {{ id }}?"
+      },
+      "detail": {
+        "title": "Contract Price Update History"
+      },
+      "id": "ID",
+      "updateDate": "Update Date",
+      "beforePrice": "Before Price",
+      "afterPrice": "After Price",
+      "contract": "Contract"
+    }
+  }
+}

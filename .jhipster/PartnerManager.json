@@ -1,0 +1,47 @@
+{
+  "applications": "*",
+  "changelogDate": "20230714124521",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "partner_manager",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "companyName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String",
+      "fieldValidateRules": ["pattern"],
+      "fieldValidateRulesPattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$"
+    },
+    {
+      "fieldName": "phoneNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "wechatId",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "PartnerManager",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "contracts",
+      "otherEntityRelationshipName": "partnerManager",
+      "relationshipName": "contracts",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}
