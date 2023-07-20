@@ -1,0 +1,1 @@
+org.springframework.test.context.ContextCustomizerFactory = jp.ecn.sesweb.config.TestContainersSpringContextCustomizerFactory
